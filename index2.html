@@ -1,0 +1,68 @@
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<!-- Custom Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Mrs+Sheppards%7CDosis:300,400,700%7COpen+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800;' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+<!-- Plugin CSS -->
+<link rel="stylesheet" href="css/animate.min.css" type="text/css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style.css" type="text/css">
+
+<div class="wrapper">
+	<div class="masonry gutterless">
+		<div class="brick">
+			<img src="img/Principal/7.jpg">
+		</div>
+		<div class="brick">
+			<img src="img/Principal/71.jpg">
+		</div>
+		<div class="brick">
+			<img src="img/Principal/3.5.jpg">
+		</div>
+		<div class="brick">
+			<img src="img/Principal/70.jpg">
+		</div>
+		<div class="brick">
+			<img src="img/Principal/18.jpg" alt="">
+		</div>
+		<div class="brick">
+			<img src="img/Principal/81.jpg" alt="">
+		</div>
+		<div class="brick">
+			<img src="img/Principal/99.jpg" alt="">
+		</div>
+		<div class="brick">
+			<img src="img/Principal/34.jpg" alt="">
+		</div>
+		<div class="brick">
+			<img src="img/Principal/72.jpg" alt="">
+		</div>
+		<div class="brick">
+			<img src="img/Principal/31.jpg" alt="">
+		</div>
+	</div>
+</div>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/parallax.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/countto.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/masonry.pkgd.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/imagesloaded.pkgd.js"></script>
+
+<script>
+  var $container = $('#container');
+
+  $container.imagesLoaded( function() {
+    $container.masonry({
+      columnWidth: function( containerWidth ) {
+        return containerWidth / 2
+      }
+    });
+  });
+</script>
