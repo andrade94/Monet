@@ -21,6 +21,18 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+<style>
+	#map {
+	height: 400px;
+	width: 100%;
+	border-style: solid;
+	}
+	#map2 {
+	height: 400px;
+	width: 100%;
+	border-style: solid;
+	}
+</style>
 </head>
 <body id="page-top">
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
@@ -299,6 +311,56 @@
 
 <!-- Section Contact
 ================================================== -->
+<hr>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-10 col-lg-offset-1 text-center">
+			<h2 class="section-heading">SUCURSAL CUMBRES</h2>
+			<hr>
+			<p style="font-size: 18px;">
+				Paseo de las Termópilas #2459 
+			</p>
+			<p style="font-size: 18px;">
+				Local-1 Col. Cumbres 3er Sector 
+			</p>
+			<p style="font-size: 18px;">
+				Monterrey, Nuevo León              
+			</p>
+			<p style="font-size: 18px;">
+				C.P. 64610                                   
+			</p>
+			<p style="font-size: 18px;">
+				Tel. 81 2139 2205 y 06                                  
+			</p>
+		</div>
+	</div>
+</div>
+<div id="map"></div> <br>
+<hr>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-10 col-lg-offset-1 text-center">
+			<h2 class="section-heading">SUCURSAL CARRETERA NACIONAL</h2>
+			<hr>
+			<p style="font-size: 18px;">
+				Carretera Nacional #900 L-38 
+			</p>
+			<p style="font-size: 18px;">
+				Col. Palmares Residencial   
+			</p>
+			<p style="font-size: 18px;">
+				Monterrey, Nuevo León              
+			</p>
+			<p style="font-size: 18px;">
+				C.P.64897
+			</p>
+			<p style="font-size: 18px;">
+				Tel. 81 2270 6875                                 
+			</p>
+		</div>
+	</div>
+</div>
+<div id="map2"></div> <br>
 <section id="contact">
 <div class="container">
 <div class="row">
@@ -341,17 +403,30 @@
 <script src="js/masonry.pkgd.js"></script>
 <script src="js/masonry.pkgd.min.js"></script>
 <script src="js/imagesloaded.pkgd.js"></script>
-
 <script>
-  var $container = $('#foto');
-
-  $container.imagesLoaded( function() {
-    $container.masonry({
-      columnWidth: function( containerWidth ) {
-        return containerWidth / 3
-      }
+  function initMap() {
+    var leones = {lat: 25.717109, lng: -100.383524};
+    var carretera = {lat: 25.568966, lng: -100.241831};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: leones
     });
-  });
+  	var map1 = new google.maps.Map(document.getElementById('map2'), {
+      zoom: 15,
+      center: carretera
+    });
+    var marker = new google.maps.Marker({
+      position: leones,
+      map: map
+    });
+    var marker1 = new google.maps.Marker({
+      position: carretera,
+      map: map1
+    });
+  }
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkxG0KVU2gbo4JFs1loRQnFTaU_cyhTVo&callback=initMap">
 </script>
 </body>
 </html>
