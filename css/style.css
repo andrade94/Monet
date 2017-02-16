@@ -160,14 +160,14 @@ html,body {
 	height:100%;
 }
 body {
-	font-family:Open Sans,'Helvetica Neue',Arial,sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size:15px;
 	color:#777;
 	line-height:1.7;
 }
 hr {
 	max-width:50px;
-	border-color:#f05f40;
+	border-color:#9932CC;
 	border-width:3px;
 }
 hr.light {
@@ -183,7 +183,7 @@ a:hover,a:focus {
 	color:#eb3812;
 }
 h1,h2,h3,h4,h5,h6 {
-	font-family:'Dosis','Helvetica Neue',Arial,sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 p {
 	margin-bottom:20px;
@@ -222,7 +222,7 @@ aside {
 }
 .navbar-default {
 	border-color:rgba(34,34,34,.05);
-	font-family:'Open Sans','Helvetica Neue',Arial,sans-serif;
+	font-family: 'Poppins', sans-serif;
 	background-color:#fff;
 	-webkit-transition:all .35s;
 	-moz-transition:all .35s;
@@ -230,7 +230,7 @@ aside {
 }
 .navbar-default .navbar-header .navbar-brand {
 	text-transform:uppercase;
-	font-family:'Open Sans','Helvetica Neue',Arial,sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-weight:700;
 	color:#f05f40;
 }
@@ -241,7 +241,7 @@ aside {
 	text-transform:uppercase;
 	font-size:14px;
 	font-weight:600;
-	font-family:Dosis;
+	font-family: 'Poppins', sans-serif;
 	color:#222;
 	letter-spacing:0.8px;
 }
@@ -249,7 +249,7 @@ aside {
 	color:#f05f40;
 }
 .navbar-default .nav>li.active>a,.navbar-default .nav>li.active>a:focus {
-	color:#f05f40!important;
+	color:#9932CC!important;
 	background-color:transparent;
 }
 .navbar-default .nav>li.active>a:hover,.navbar-default .nav>li.active>a:focus:hover {
@@ -446,7 +446,7 @@ header .header-content .header-content-inner p {
 .btn-primary {
 	border-color:#f05f40;
 	color:#fff;
-	background-color:#f05f40;
+	background-color:#9932CC;
 	-webkit-transition:all .35s;
 	-moz-transition:all .35s;
 	transition:all .35s;
